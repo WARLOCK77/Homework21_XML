@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <package name="ua.levelup"/>
+    <type name = "Configuration" access_modifier="public">
+        <field name = "id" access_modifier="private static" type="long" />
+        <field name = "title" access_modifier="private static" type="String"/>
+        <field name = "par1" access_modifier="private static final" type="int" value="3"/>
+        <field name = "par2" access_modifier="private static final" type="int" value="4"/>
+        <method name ="main" access_modifier="public" type="static" return_type="void">
+            <params>
+                <param name="args" type="String" isArray="T"/>
+            </params>
+            <body>
+                <statement>
+                    <var name="a" type="int" value="5"/>
+                    <var name="b" type="int" value="7"/>
+                    <var name="c" type="int" value="a+b"/>
+                    <systemprint1 arg="c"/>
+                    <systemprint1 arg="multiply(par1, par2)"/>
+                    <systemprint arg="HELLO WORLD!"/>
+                </statement>
+            </body>
+        </method>
+        <method name ="multiply" access_modifier="public" type="static" return_type="int">
+            <params>
+                <param1 name1="par1" type1="int" name2="par2" type2="int"/>
+            </params>
+            <body>
+                <statement>
+                    <return action="par1*par2"/>
+                </statement>
+            </body>
+        </method>
+    </type>
+</xml>
